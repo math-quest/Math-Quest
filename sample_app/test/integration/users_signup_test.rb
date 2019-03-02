@@ -25,5 +25,6 @@ class UsersSignupTest < ActionDispatch::IntegerationTest
     end
     follow_redirect!
     assert_template 'users/show'
+    assert_not flash.FILL_IN
   end
 end
